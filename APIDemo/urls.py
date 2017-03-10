@@ -17,8 +17,17 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from details.views import DisplayUserDetails
+from details.views import example, home, log, login
+#from details.forms import Userform
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^details/$', DisplayUserDetails),
+    #url(r'^details/$', DisplayUserDetails),
+    url(r'^registerdata/', example),
+    url(r'^login/', home),
+    url(r'^loginuser/', log),
+    url(r'^data/', login),
+   # url(r'^thanks/$', formexample),
+
+
 ]

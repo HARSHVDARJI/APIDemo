@@ -6,7 +6,7 @@ from django.db import models
 # Create your models here.
 
 class UserDetails(models.Model):
-    fname = models.CharField(max_length=16)
+    fname = models.CharField(max_length=16, null=True)
     lname = models.CharField(max_length=16)
     email = models.EmailField()
 
